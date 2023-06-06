@@ -1,8 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ApolloProvider } from '@apollo/client'
-import client from './client'
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
 import App from './App'
+
+const client = new ApolloClient({
+    uri: 'https://countries.trevorblades.com/graphql',
+    cache: new InMemoryCache(),
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <ApolloProvider client={client}>

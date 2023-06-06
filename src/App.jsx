@@ -5,7 +5,6 @@ import Main from './components/Main'
 import { useQuery, gql } from '@apollo/client'
 import './index.css'
 
-
 const GET_LOCATIONS = gql`
 query Countries {
   countries {
