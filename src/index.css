@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .brand {
+        @apply text-4xl font-bold font-playfair
+    }
+    .btn-search {
+        @apply absolute right-0 h-8 px-2 bg-rose-500 hover:bg-rose-400 rounded-r-xl border-2 border-zinc-400 group-focus-within:border-rose-500 text-white font-bold text-xs transition-all
+    }
+}
